@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Naoki Imaishi | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f7fa;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background-color: #ffffff;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    nav h2 {
+      color: #cc0033;
+    }
+
+    nav a {
+      color: #374151;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #cc0033;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #ffffff;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: #cc0033;
+    }
+
+    .hero h2 {
+      font-size: 24px;
+      color: #6b7280;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      max-width: 750px;
+      font-size: 19px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #cc0033;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #a60029;
+    }
+
+    /* GENERAL SECTIONS */
+    section {
+      padding: 80px 10%;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    /* ABOUT */
+    .about {
+      background-color: #f5f7fa;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    /* SKILLS */
+    .skills {
+      background-color: white;
+    }
+
+    .skill-container {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .skill {
+      background-color: #f3f4f6;
+      border: 1px solid #d1d5db;
+      padding: 12px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    /* PROJECTS */
+    .projects {
+      background-color: #f5f7fa;
+    }
+
+    .project-container {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .project-card h3 {
+      color: #cc0033;
+      margin-bottom: 15px;
+    }
+
+    .project-card p {
+      margin-bottom: 20px;
+    }
+
+    .project-card a {
+      color: #cc0033;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* CONTACT */
+    .contact {
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1f2937;
+      color: white;
+      padding: 25px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h2>Naoki Imaishi</h2>
+
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- Personal Statement / Hero -->
+  <header class="hero">
+    <h1>Hi, I'm <span>Naoki Imaishi</span>.</h1>
+
+    <h2>Accounting Student at Rutgers Business School</h2>
+
+    <p>
+      An accounting student at Rutgers Business School interested in audit
+      and tax, with a passion for developing financial, analytical, and
+      professional skills.
+    </p>
+
+    <a class="button" href="#projects">View My Projects</a>
+  </header>
+
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+
+    <p>
+      I am an accounting student at Rutgers Business School developing my
+      knowledge of accounting, finance, and business analysis. I am interested
+      in gaining professional experience in accounting while continuing to
+      strengthen my technical and communication skills.
+    </p>
+  </section>
+
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill-container">
+      <div class="skill">Financial Accounting</div>
+      <div class="skill">Managerial Accounting</div>
+      <div class="skill">Financial Analysis</div>
+      <div class="skill">Microsoft Excel</div>
+      <div class="skill">Google Workspace</div>
+      <div class="skill">Basic SQL</div>
+      <div class="skill">Basic SAP Concepts</div>
+      <div class="skill">Data Organization</div>
+      <div class="skill">English</div>
+      <div class="skill">Japanese</div>
+    </div>
+  </section>
+
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-container">
+
+      <div class="project-card">
+        <h3>S.C.R.A.T.C.H. – Rutgers Enactus</h3>
+
+        <p>
+          Contributed to a student-led community project focused on helping
+          cats through fundraising, awareness, foster placements, and
+          community outreach.
+        </p>
+
+        <a href="#" onclick="return false;">Rutgers Enactus Project</a>
+      </div>
+
+
+      <div class="project-card">
+        <h3>Forage Federal Budget Simulation</h3>
+
+        <p>
+          Completed a federal budget simulation that required evaluating
+          competing policy priorities while balancing government spending,
+          revenue, and national debt.
+        </p>
+
+        <a href="#" onclick="return false;">Fiscal Policy Project</a>
+      </div>
+
+
+      <div class="project-card">
+        <h3>Financial Analysis Project</h3>
+
+        <p>
+          Applied accounting and finance concepts to analyze financial
+          performance using profitability, cash flow, and financial ratio
+          calculations.
+        </p>
+
+        <a href="#" onclick="return false;">Accounting & Finance Project</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Let's Connect</h2>
+
+    <p>
+      I'm always interested in connecting with accounting professionals,
+      recruiters, and fellow students.
+    </p>
+
+    <a class="button"
+       href="https://github.com/Naoki-Imaishi"
+       target="_blank">
+       View My GitHub
+    </a>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2026 Naoki Imaishi</p>
+  </footer>
+
+</body>
+</html>
